@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    background: lightseagreen;
+}
+
+.container{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.container .front img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.flipcard{
+    position: relative;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+.flipcard .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 2s;
+    transform-style: preserve-3d;
+    z-index: 100;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    background: white;
+}
+
+.flipcard .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 2s;
+    transform-style: preserve-3d;
+    z-index: 99;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    background: #222;
+    color: lightseagreen;
+    width: 200px;
+    height: 300px;
+    transform: rotateY(180deg);
+}
+
+.container:hover .front{
+    transform:rotateY(-180deg)
+}
+
+.container:hover .back{
+    transform:rotateY(0deg)
+}
+
+h4{
+    margin-top: 138px;
+    padding: 0;
+    font-size: 24px;
+    color: lightseagreen;
+    text-transform: uppercase;
+    text-align: center;
+}

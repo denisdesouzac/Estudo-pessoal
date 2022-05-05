@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    position: relative;
+    background: url(bg3.jpg);
+    height: 8000px;
+    font-size: cover;
+    background-position: 0 100px;
+    background-repeat: repeat-x;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        background-position: 100% 100px;
+    }
+    to{
+        background-position: 0 100px;
+    }
+}
+
+.car{
+    position: absolute;
+    width: 70px;
+    margin: 355px 150px;
+}

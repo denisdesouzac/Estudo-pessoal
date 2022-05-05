@@ -1,0 +1,36 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset{
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #CCC;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input.tamanho{
+    width: 20em;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}
+
+input.radio{
+    width: auto;
+}
+
+.radio{
+    margin-right: 0.9em;
+}

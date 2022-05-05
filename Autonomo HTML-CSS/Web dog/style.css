@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background: #6B9DFC url(img/blue-dog.png) no-repeat;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+header #logo img{
+    height: 100%;
+}
+
+#logo{
+    border: 1px solid green;
+    display: flexbox;
+    height: 100%;
+    width: 50px;
+}
+
+nav{
+    display:flexbox;
+    align-items: center;
+    margin: 12px auto;
+    width: 450px;
+    border: 1px solid red;
+}
+ 
+nav ul{
+    margin: 0 auto;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #6B9DFC;
+}
